@@ -27,7 +27,6 @@ export function useCamera() {
     physicalDevices: ['ultra-wide-angle-camera', 'wide-angle-camera'],
   });
 
-  const neutralZoom = device?.neutralZoom ?? MINZOOM;
   const minZoom = device?.minZoom ?? MINZOOM;
   const maxZoom = Math.min(device?.maxZoom ?? MINZOOM, MAXZOOM);
 
